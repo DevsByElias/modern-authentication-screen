@@ -1,0 +1,208 @@
+html {
+  margin: 0;
+  padding: 0;
+  background: #000030;
+  background-attachment: fixed;
+  font-family: "Ropa Sans", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+.header-text {
+  padding-bottom: 20%;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(5.5px);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255);
+  border-radius: 32px;
+  border: 5px solid transparent rgba(255, 255, 255, 0.7);
+  box-shadow: 4px 4px 30px rgb(245, 245, 245, 0.25);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+h1,
+h2 {
+  font-family: "Ropa Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2,
+h3,
+h4 {
+  color: rgba(53, 53, 53, 0.568);
+  font-family: "Ropa Sans", sans-serif;
+  font-size: medium;
+}
+.return-button {
+  margin-bottom: 25vw;
+  margin-right: 14vw;
+  position: absolute;
+  z-index: 1;
+}
+.return-button button {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  color: #27282e;
+  cursor: pointer;
+  font-family: "Ropa Sans", sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+}
+.return-button:hover {
+  color: rgb(32, 33, 100);
+  transition: all 0.3s ease-in-out;
+}
+.login-button-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 7vw;
+}
+.login-button button {
+  color: #ffffff;
+  padding: 15px;
+  width: 70%;
+  margin-left: 125px;
+  box-sizing: border-box;
+  background: #000030;
+  border-radius: 32px;
+  border: none;
+  outline: none;
+  transition: border-color 0.3s;
+  box-shadow: 4px 4px 30px rgba(35, 35, 35, 0.65);
+  cursor: pointer;
+  font-family: "Ropa Sans", sans-serif;
+}
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.forgot-button {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  color: #27282e;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Ropa Sans", sans-serif;
+}
+
+.sign-up-button button,
+.sign-in-button button {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  color: #27282e;
+  cursor: pointer;
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: bold;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-email input {
+  width: 100%;
+}
+
+.sign-up-button button:hover,
+.forgot-button:hover,
+.sign-in-button:hover {
+  color: rgb(32, 33, 100);
+  transition: all 0.3s ease-in-out;
+}
+.login-button button:hover {
+  background: linear-gradient(200deg, #000010, #000030);
+  transition: all 0.3s ease-in-out;
+}
+.svg-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.svg-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.input-fullname,
+.input-email,
+.input-password,
+.input-confirm-password {
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+  -webkit-backdrop-filter: blur(5.5px);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  box-shadow: 1px 1px 20px rgba(35, 35, 35, 0.6);
+  width: 100%;
+}
+
+.input-fullname input,
+.input-email input,
+.input-password input,
+.input-confirm-password input {
+  border: none;
+  outline: none;
+  font-size: large;
+  text-align: start;
+  align-items: center;
+  font-family: "Ropa Sans", sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .header-text {
+    padding-bottom: 10%;
+  }
+
+  .return-button {
+    margin-bottom: 135%;
+    margin-right: 57%;
+  }
+  .return-button button {
+    font-size: small;
+  }
+
+  .login-button button {
+    margin-right: 1vh;
+    margin-left: 2rem;
+    padding: 0.5rem;
+  }
+}
