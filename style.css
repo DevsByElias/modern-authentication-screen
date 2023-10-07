@@ -49,8 +49,8 @@ h4 {
   font-size: medium;
 }
 .return-button {
-  margin-bottom: 25vw;
-  margin-right: 14vw;
+  top: 20px; /* Position absolute element 20px from the closest relative parrent  */
+  left: 20px;
   position: absolute;
   z-index: 1;
 }
